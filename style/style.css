@@ -195,10 +195,17 @@ footer {
 }
 
 .icon {
+  width: 18px;
   height: 20px;
-  object-fit: cover;
+  object-fit: contain;
+  padding-right: 30px;
 }
 
 .Picon {
-  margin-bottom: 2%;
+  margin-top: 0;
+}
+
+.fa-brands {
+  margin: 2%;
+  border: 1px solid white;
 }
