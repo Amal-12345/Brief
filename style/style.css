@@ -34,7 +34,6 @@ body {
   border-radius: 50px;
   width: 283px;
   border: none;
-  margin: 0 0px 302px;
   height: 50px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -42,7 +41,6 @@ body {
   color: white;
   background-color: #fe52c0;
   cursor: pointer;
-  position: absolute;
   top: 562px;
   left: 100px;
 }
@@ -64,7 +62,7 @@ body {
 
 .text1 {
   font-family: "Open Sans", sans-serif;
-  padding: 0px 40px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .landing-page {
@@ -74,7 +72,6 @@ body {
 .community {
   display: flex;
   flex-direction: column;
-
   font-size: 18px;
 }
 
@@ -84,6 +81,7 @@ body {
   margin: 30px 10%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 15px;
+  
 }
 .titreMain {
   font-family: "Poppins", sans-serif;
