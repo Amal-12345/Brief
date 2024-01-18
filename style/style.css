@@ -1,23 +1,21 @@
-
 /* En-tête */
 
 .header {
-background-color: hsl(193, 100%, 96%);
-background-image: url(../images/bg_hero_desktop.svg);   
-background-repeat: no-repeat;
-height: 100vh;
-padding: 40px 0 0 60px;
+  background-color: hsl(193, 100%, 96%);
+  background-image: url(../images/bg_hero_desktop.svg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 40px 0 0 60px;
 }
 body {
   margin: 0 auto;
 }
 .logobouton {
-    padding: 0px 0px 0 40px
+  padding: 0px 0px 0 40px;
 }
 
-
 .bouton1 {
-border-radius: 50px;
+  border-radius: 50px;
   width: 200px;
   border: none;
   height: 50px;
@@ -27,12 +25,13 @@ border-radius: 50px;
   color: grey;
   background-color: #fff;
   cursor: pointer;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  position: absolute;
-right: 160px;
-top:40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: absolute;
+  right: 160px;
+  top: 40px;
 }
 .bouton2 {
-border-radius: 50px;
+  border-radius: 50px;
   width: 283px;
   border: none;
   margin: 0 0px 302px;
@@ -45,41 +44,135 @@ border-radius: 50px;
   cursor: pointer;
   position: absolute;
   top: 562px;
-  left: 100px; 
+  left: 100px;
 }
 .logo {
-    width: 180px;
+  width: 180px;
 }
 .img1 {
-    width: 695px;
-    padding: 90px 180px 0 0;
-    object-fit: contain;
-    height: 495px
+  width: 695px;
+  padding: 90px 180px 0 0;
+  object-fit: contain;
+  height: 495px;
 }
 
-
 .big-title {
-font-family: 'Poppins', sans-serif;
-padding: 160px 110px 0px 0px;
-font-size: 37px;
+  font-family: "Poppins", sans-serif;
+  padding: 160px 110px 0px 0px;
+  font-size: 37px;
 }
 
 .text1 {
-   font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 0px 40px 0px 0px;
 }
 
-
 .landing-page {
-display: flex;
+  display: flex;
 }
 
 .community {
-    display: flex;
-    flex-direction: column;
-  
-  font-size: 18px;
-  font-weight:
+  display: flex;
+  flex-direction: column;
 
+  font-size: 18px;
 }
 
+.block {
+  display: flex;
+  width: 80%;
+  margin: 30px 10%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+}
+.titreMain {
+  font-family: "Poppins", sans-serif;
+}
+.mainP {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.mainP {
+  color: #a2a8ad;
+}
+.titre_texte {
+  display: block;
+  width: fit-content;
+  margin: 6% 13%;
+}
+
+.imgMain {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  margin: 0 2% 0 11%;
+}
+.deuxcouleurs {
+  height: fit-content;
+  background: linear-gradient(
+    to bottom,
+    white 0%,
+    white 65%,
+    hsl(192, 100%, 9%) 35%,
+    hsl(192, 100%, 9%) 100%
+  );
+}
+
+.RTBYC {
+  width: 45%;
+  margin: 100px 27.5% 0 27.5%;
+  padding: 2%;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.startForFree {
+  border-radius: 50px;
+  width: 30%;
+  border: none;
+  margin: 30px 20%;
+  height: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #fe52c0;
+  cursor: pointer;
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #d5eaf3;
+}
+
+.logo2 {
+  width: 220px;
+  height: 320px;
+  object-fit: contain;
+  margin: 0 2% 0 11%;
+}
+.informationsComplementaires {
+  display: flex;
+}
+
+.moyensContact {
+  margin-top: -8%;
+  margin-left: 11%;
+  width: 35%;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.location,
+.phone,
+.email {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3%;
+}
