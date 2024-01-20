@@ -31,12 +31,10 @@ body {
 }
 
 .community {
-  order: 2;
   padding: 50px 0 147px 0;
 }
 
 .img1 {
-  order: 4;
   margin-top: 20px; 
   object-fit: cover;
   width: 700px;
