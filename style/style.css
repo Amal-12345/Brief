@@ -205,7 +205,12 @@ footer {
   margin-top: 0;
 }
 
-.fa-brands {
-  margin: 2%;
+.iconMedias {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon_facebook {
   border: 1px solid white;
+  border-radius: 200px;
 }
