@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/script.js" />
+    <script src="./style/script.js" defer></script>
     <link rel="stylesheet" href="./style/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,36 +27,51 @@
     <title>Mon Premier Brief</title>
   </head>
   <body>
-    <header class="header">
-      <div class="logobouton">
+    <header class="header" id="header">
+      <div class="top">
         <img src="./images/logo.svg" alt="Logo" class="logo" />
-
-        <button class="bouton1">Try It Free</button>
-        <div class="landing-page">
-          <div class="community">
-            <h2 class="big-title">
-              Build The Community <br />
-              Your Fans Will Love
-            </h2>
-            <br />
-            <p class="text1">
-              Huddle re-imagines the way we build communities. You have a voice,
-              but so does your audience. Create connections with your users as
-              you engage in genuine discussion.
-            </p>
-            <br />
-            <button class="bouton2">Get Started For Free</button>
-          </div>
-          <img
-            src="./images/illustration_mockups.svg"
-            alt="Illustration mockups"
-            class="img1"
-          />
+        <div class="button1Div">
+          <a href="#shopButton"><button class="bouton1">Try It Free</button></a>
+          <nav>
+            <a href="#header">Home</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#shopButton">Shop</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <button
+            type="button"
+            aria-label="toggle curtain navigation"
+            class="nav-toggler"
+          >
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+          </button>
         </div>
+      </div>
+      <div class="mainContent">
+        <div class="community">
+          <h2 class="big-title">Build The Community Your Fans Will Love</h2>
+          <p class="text1">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <div class="button2Div">
+            <a href="#shopButton"
+              ><button class="bouton2">Get Started For Free</button></a
+            >
+          </div>
+        </div>
+        <img
+          src="./images/illustration_mockups.svg"
+          alt="Illustration mockups"
+          class="img1"
+        />
       </div>
     </header>
     <main>
-      <div class="blocksP">
+      <div class="blocksP" id="benefits">
         <div class="growTogether block">
           <div class="titre_texte">
             <h2>Grow Together</h2>
@@ -106,12 +121,14 @@
         <div class="deuxcouleurs">
           <div class="RTBYC">
             <h2>Ready To Build Your Community?</h2>
-            <button class="startForFree">Get Started For Free</button>
+            <button class="startForFree" id="shopButton">
+              Get Started For Free
+            </button>
           </div>
         </div>
       </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <img class="logo2" src="./images/logo2.svg" alt="Logo" />
       <div class="informationsComplementaires">
         <div class="moyensContact">
@@ -123,38 +140,62 @@
             />
             <p class="Picon">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nulla
-              perspiciatis magni iste. Assumenda, debitis inventore, enim nobis
-              fugiat magnam vero dolore repudiandae aliquam necessitatibus
-              labore eaque quasi nisi aliquid.
+              perspiciatis magni iste. Assumenda, debitis inventore.
             </p>
           </div>
           <div class="phone">
-            <img class="icon" src="./images/icon_phone.svg" alt="icon_phone" />
-            <p class="Picon">+1-543-123-4567</p>
+            <img
+              class="icon iconTelephone"
+              src="./images/icon_phone.svg"
+              alt="icon_phone"
+            />
+            <a href="tel:+1-543-123-4567" class="Picon Telephone"
+              >+1-543-123-4567</a
+            >
           </div>
           <div class="email">
-            <img class="icon" src="./images/icon_email.svg" alt="icon_email" />
-            <p class="Picon">example@huddle.com</p>
+            <img
+              class="icon iconEmail"
+              src="./images/icon_email.svg"
+              alt="icon_email"
+            />
+            <a href="mailto:example@huddle.com" class="Picon Email"
+              >example@huddle.com</a
+            >
           </div>
         </div>
-        <div class="list">
-          <p>About Us</p>
-          <p>What We Do</p>
-          <p>FAQ</p>
-          <p>Career</p>
-          <p>Blog</p>
-          <p>Contact Us</p>
+        <div class="list_entiere">
+          <div class="partie_un_list">
+            <ul class="list">
+              <li class="li">About Us</li>
+              <li class="li">What We Do</li>
+              <li class="li">FAQ</li>
+            </ul>
+          </div>
+          <div class="partie_deux_list">
+            <ul class="list">
+              <li class="li">Career</li>
+              <li class="li">Blog</li>
+              <li class="li">Contact Us</li>
+            </ul>
+          </div>
         </div>
         <div class="iconMedias">
-          <div>
-            <img
-              class="icon_facebook"
-              src="./images/logo-facebook.svg"
-              alt="logo-facebook"
-            />
+          <div class="mediasClass">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
           </div>
-          <div><i class="fa-brands fa-twitter"></i></div>
-          <div><i class="fa-brands fa-instagram"></i></div>
+          <div class="mediasClass">
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+          <div class="mediasClass">
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
         </div>
       </div>
     </footer>
