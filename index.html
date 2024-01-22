@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,11 +23,22 @@
     <title>Mon Premier Brief</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="top">
       <img src="./images/logo.svg" alt="Logo" class="logo" />
       <div class="button1Div">
-      <button class="bouton1">Try It Free</button>
+      <a href="#shopButton"><button class="bouton1">Try It Free</button></a>
+      <nav>
+      <a href="#header">Home</a>
+      <a href="#shopButton">Shop</a>
+      <a href="#contact">Location</a>
+      <a href="#contact">Contact</a>
+      </nav>
+      <button type="button" aria-label="toggle curtain navigation" class="nav-toggler">
+      <span class="line l1"></span>
+      <span class="line l2"></span>
+      <span class="line l3"></span>
+      </button>
       </div>
       </div>
     <div class="mainContent">
@@ -39,7 +50,7 @@
         in genuine discussion.
       </p>
       <div class="button2Div">
-      <button class="bouton2">Get Started For Free</button>
+      <a href="#shopButton"><button class="bouton2">Get Started For Free</button></a>
       </div>
       </div>
      <img src="./images/illustration_mockups.svg"
@@ -99,7 +110,7 @@
       <div class="deuxcouleurs">
         <div class="RTBYC">
           <h2>Ready To Build Your Community?</h2>
-          <button class="startForFree">Get Started For Free</button>
+          <button class="startForFree" id="shopButton">Get Started For Free</button>
         </div>
       </div>
     </main>
@@ -125,7 +136,7 @@
             <p>example@huddle.com</p>
           </div>
         </div>
-        <div class="list">
+        <div class="list" id="contact">
           <p>About Us</p>
           <p>What We Do</p>
           <p>FAQ</p>
