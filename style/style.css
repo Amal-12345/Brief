@@ -6,14 +6,17 @@ body {
   margin: 0 auto;
 }
 
+h2 {
+  font-family: "Poppins", sans-serif;
+}
 .header {
   background-color: hsl(193, 100%, 96%);
   background-image: url(../images/bg_hero_desktop.svg);
   background-repeat: no-repeat;
   padding: 40px 0 0 60px;
   display: flex;
-    flex-direction: column;
-    height: 682px;
+  flex-direction: column;
+  height: 682px;
 }
 
 .top {
@@ -23,27 +26,51 @@ body {
 
 .logo {
   padding: 0px 39px;
-  width: 192px
+  width: 192px;
 }
 
 .bouton1 {
   border-radius: 50px;
-  width: 200px;
+  width: 215%;
   border: none;
   height: 50px;
-  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
-  color: grey;
+  color: #303030;
   background-color: #fff;
   cursor: pointer;
   box-shadow: #64646f33 0px 7px 29px 0px;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+.button1Div {
+  margin-left: 23%;
+}
+
+.bouton1:disabled {
+  pointer-events: none;
+}
+
+.bouton1:hover {
+  color: #fff;
+  background-color: grey;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.bouton1:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
 
 .nav-toggler {
   position: fixed;
   z-index: 10;
-  top: 30px;
+  top: 36px;
   right: 105px;
   height: 50px;
   width: 50px;
@@ -61,14 +88,13 @@ body {
   width: 100%;
   height: 4px;
   background: #4486c0;
-  transition: transform 0.3s ease-out,
-  opacity 0.1s ease-out;
+  transition: transform 0.3s ease-out, opacity 0.1s ease-out;
 }
 .l1 {
   transform: translateY(-10px);
 }
 .l3 {
-transform: translateY(10px);
+  transform: translateY(10px);
 }
 .nav-toggler.active .l1 {
   transform: translateY(0px) rotate(135deg);
@@ -91,7 +117,7 @@ nav {
   background: #4486c0;
   border-left: 1px solid #cfcfcf;
   transform: translateX(100%);
-transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+  transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
 }
 nav.active {
   transform: translate(0);
@@ -112,47 +138,57 @@ nav a {
 }
 
 .community {
-  padding: 50px 0 147px 0;
+  margin-right: auto;
+  margin-top: -5%;
 }
 
 .img1 {
-  margin-top: 20px; 
-  object-fit: cover;
-  width: 700px;
-  padding: 5px 178px 0 0;
+  margin: 5% 12% -2% 6%;
+  width: 114%;
+  display: flex;
 }
 .big-title {
   font-family: "Poppins", sans-serif;
-  font-size: 37px;
-  width: 420px;
-  padding: 92px 0 0 38px;
+  font-size: 210%;
+  width: 77%;
+ display: flex;
+  margin-left: 12%;
+  margin-top: 36%;
 }
 
 .text1 {
   font-family: "Open Sans", sans-serif;
-  padding: 0 0 0px 38px;
-  width: 465px;
+  margin-left: 12%;
+  width: 88%;
 }
 
-.button1Div {
- padding-left: 340px;
-}
+/* .button1Div {
+  padding-left: 340px;
+} */
 
 .bouton2 {
   border-radius: 50px;
   width: 283px;
   border: none;
   height: 55px;
-  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   color: white;
   background-color: #fe52c0;
-cursor: pointer;
+  cursor: pointer;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 .button2Div {
-padding: 20px 0 0 38px;
+margin-top: 8%;
+  margin-left: 12%;
 }
+}
+/* main */
 .block {
   display: flex;
   width: 80%;
@@ -160,11 +196,15 @@ padding: 20px 0 0 38px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 15px;
 }
+
+.blocksP {
+  margin-top: 100px;
+}
 .titreMain {
   font-family: "Poppins", sans-serif;
 }
 .mainP {
-  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #a2a8ad;
 }
@@ -203,21 +243,37 @@ padding: 20px 0 0 38px;
 
 .startForFree {
   border-radius: 50px;
-  width: 30%;
+  width: 40%;
   border: none;
-  margin: 30px 20%;
+  margin: 30px 10%;
   height: 50px;
-  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   color: white;
   background-color: #fe52c0;
   cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
+.startForFree:hover {
+  box-shadow: #fe52c0 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
+.bouton2:hover {
+  box-shadow: #fe52c0 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
+/* footer */
 footer {
   background-color: hsl(192, 100%, 9%);
   color: #d5eaf3;
+  font-family: "Open Sans", sans-serif;
 }
 
 .logo2 {
@@ -228,18 +284,24 @@ footer {
 }
 .informationsComplementaires {
   display: flex;
+  flex-direction: row;
+  text-align: start²;
 }
 
 .moyensContact {
   margin-top: -8%;
   margin-left: 11%;
-  width: 35%;
+  width: 26%;
+}
+
+.list_entiere {
+  display: flex;
+  flex-direction: row;
 }
 
 .list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
 }
 
 .location,
@@ -250,3 +312,72 @@ footer {
   margin-left: 3%;
 }
 
+.icon {
+  width: 18px;
+  height: 20px;
+  object-fit: contain;
+  padding-right: 30px;
+}
+
+.partie_un_list,
+.partie_deux_list {
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 25px;
+}
+
+.iconEmail {
+  margin-top: 15px;
+}
+
+.iconTelephone {
+  margin-top: 5px;
+}
+
+.Picon {
+  margin-top: 0;
+  text-decoration: none;
+  color: #d5eaf3;
+}
+.Telephone {
+  margin-top: 5px;
+}
+.Email {
+  margin-top: 20px;
+}
+.Email:hover {
+  text-decoration: underline;
+}
+
+.Telephone:hover {
+  text-decoration: underline;
+}
+
+.iconMedias {
+  display: flex;
+  flex-direction: row;
+}
+
+.fa-facebook-f {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+}
+
+.fa-twitter {
+  padding: 5px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 25px;
+}
+
+.fa-instagram {
+  padding: 5px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+}
