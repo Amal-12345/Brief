@@ -47,6 +47,7 @@ h2 {
   touch-action: manipulation;
   will-change: transform;
 }
+
 .button1Div {
   margin-left: 23%;
 }
@@ -95,6 +96,79 @@ h2 {
 }
 .l3 {
   transform: translateY(10px);
+
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 200px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* main */
+.main {
+  background-color: #242424;
+  color: white;
+=======
 }
 .nav-toggler.active .l1 {
   transform: translateY(0px) rotate(135deg);
@@ -160,12 +234,7 @@ nav a {
   font-family: "Open Sans", sans-serif;
   margin-left: 12%;
   width: 88%;
-}
-
-/* .button1Div {
-  padding-left: 340px;
-} */
-
+  
 .bouton2 {
   border-radius: 50px;
   width: 283px;
@@ -192,21 +261,21 @@ margin-top: 8%;
 .block {
   display: flex;
   width: 80%;
-  margin: 30px 10%;
+  padding-top: 70px;
+  margin-left: 10%;
+  margin-right: 10%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 15px;
 }
 
-.blocksP {
-  margin-top: 100px;
-}
 .titreMain {
   font-family: "Poppins", sans-serif;
 }
 .mainP {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #a2a8ad;
+
+  color: hsl(208, 11%, 55%);
 }
 .titre_texte {
   display: block;
@@ -215,11 +284,12 @@ margin-top: 8%;
 }
 
 .imgMain {
-  width: 350px;
-  height: 350px;
+  width: 32%;
+  height: 32%;
   object-fit: contain;
   margin: 0 2% 0 11%;
 }
+
 .deuxcouleurs {
   height: fit-content;
   background: linear-gradient(
@@ -233,7 +303,8 @@ margin-top: 8%;
 
 .RTBYC {
   width: 45%;
-  margin: 100px 27.5% 0 27.5%;
+  margin-left: 27.5%;
+  margin-right: 27.5%;
   padding: 2%;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -254,8 +325,6 @@ margin-top: 8%;
   background-color: #fe52c0;
   cursor: pointer;
   transition: all 0.5s;
-  user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
 }
 
@@ -285,7 +354,7 @@ footer {
 .informationsComplementaires {
   display: flex;
   flex-direction: row;
-  text-align: start²;
+  text-align: start;
 }
 
 .moyensContact {
@@ -296,12 +365,19 @@ footer {
 
 .list_entiere {
   display: flex;
-  flex-direction: row;
+  width: 35%;
+  justify-content: space-around;
+  margin-top: -11%;
 }
 
 .list {
   list-style: none;
   cursor: pointer;
+  line-height: 200%;
+}
+
+li:hover {
+  text-decoration: underline;
 }
 
 .location,
@@ -317,13 +393,6 @@ footer {
   height: 20px;
   object-fit: contain;
   padding-right: 30px;
-}
-
-.partie_un_list,
-.partie_deux_list {
-  width: fit-content;
-  height: fit-content;
-  margin-bottom: 25px;
 }
 
 .iconEmail {
@@ -356,6 +425,8 @@ footer {
 .iconMedias {
   display: flex;
   flex-direction: row;
+  margin-top: -11%;
+  margin-left: 2%;
 }
 
 .fa-facebook-f {
@@ -381,3 +452,25 @@ footer {
   border: 2px solid white;
   border-radius: 25px;
 }
+
+
+.fa-facebook-f:hover,
+.fa-instagram:hover,
+.fa-twitter:hover {
+  color: #fe52c0;
+}
+
+.mediasClass {
+  margin-left: 10px;
+}
+
+.copyright {
+  margin-left: auto;
+  width: fit-content;
+  font-size: 13px;
+  margin-right: 5%;
+  margin-bottom: 0;
+  padding-bottom: 1%;
+  cursor: pointer;
+}
+
