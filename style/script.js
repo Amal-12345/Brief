@@ -6,3 +6,9 @@ function toggleNav() {
   hamburgerButton.classList.toggle("active");
   navigation.classList.toggle("active");
 }
+
+function darkMode() {
+  let body = document.getElementById("main");
+
+  body.classList.toggle("main");
+}
