@@ -1,3 +1,4 @@
+
 const hamburgerButton = document.querySelector(".nav-toggler");
 const navigation = document.querySelector("nav");
 hamburgerButton.addEventListener("click", toggleNav);
@@ -11,4 +12,3 @@ function darkMode() {
   let body = document.getElementById("main");
 
   body.classList.toggle("main");
-}
