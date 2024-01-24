@@ -137,11 +137,6 @@ nav a {
   text-decoration: none;
 }
 
-.mainContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 /* main */
 .main {
   background-color: #242424;
