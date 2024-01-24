@@ -47,10 +47,7 @@ h2 {
   touch-action: manipulation;
   will-change: transform;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 23fe25b49b33bb242d1007360f6098520a13c347
 .button1Div {
   margin-left: 23%;
 }
@@ -99,9 +96,6 @@ h2 {
 }
 .l3 {
   transform: translateY(10px);
-<<<<<<< HEAD
-=======
-
 }
 
 .switch {
@@ -173,8 +167,6 @@ input:checked + .slider:before {
 .main {
   background-color: #242424;
   color: white;
-=======
->>>>>>> 23fe25b49b33bb242d1007360f6098520a13c347
 }
 .nav-toggler.active .l1 {
   transform: translateY(0px) rotate(135deg);
@@ -231,7 +223,7 @@ nav a {
   font-family: "Poppins", sans-serif;
   font-size: 210%;
   width: 77%;
- display: flex;
+  display: flex;
   margin-left: 12%;
   margin-top: 36%;
 }
@@ -240,12 +232,8 @@ nav a {
   font-family: "Open Sans", sans-serif;
   margin-left: 12%;
   width: 88%;
-<<<<<<< HEAD
 }
 
-=======
-  
->>>>>>> 23fe25b49b33bb242d1007360f6098520a13c347
 .bouton2 {
   border-radius: 50px;
   width: 283px;
@@ -264,14 +252,10 @@ nav a {
   touch-action: manipulation;
 }
 .button2Div {
-margin-top: 8%;
+  margin-top: 8%;
   margin-left: 12%;
 }
-<<<<<<< HEAD
 
-=======
-}
->>>>>>> 23fe25b49b33bb242d1007360f6098520a13c347
 /* main */
 .block {
   display: flex;
@@ -283,12 +267,9 @@ margin-top: 8%;
   border-radius: 15px;
 }
 
-<<<<<<< HEAD
 .blocksP {
   margin-top: 100px;
 }
-=======
->>>>>>> 23fe25b49b33bb242d1007360f6098520a13c347
 .titreMain {
   font-family: "Poppins", sans-serif;
 }
@@ -346,11 +327,8 @@ margin-top: 8%;
   background-color: #fe52c0;
   cursor: pointer;
   transition: all 0.5s;
-<<<<<<< HEAD
   user-select: none;
   -webkit-user-select: none;
-=======
->>>>>>> 23fe25b49b33bb242d1007360f6098520a13c347
   touch-action: manipulation;
 }
 
@@ -380,11 +358,7 @@ footer {
 .informationsComplementaires {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
-  text-align: start²;
-=======
   text-align: start;
->>>>>>> 23fe25b49b33bb242d1007360f6098520a13c347
 }
 
 .moyensContact {
@@ -395,26 +369,17 @@ footer {
 
 .list_entiere {
   display: flex;
-<<<<<<< HEAD
   flex-direction: row;
-=======
-  width: 35%;
-  justify-content: space-around;
-  margin-top: -11%;
->>>>>>> 23fe25b49b33bb242d1007360f6098520a13c347
 }
 
 .list {
   list-style: none;
   cursor: pointer;
-<<<<<<< HEAD
-=======
   line-height: 200%;
 }
 
 li:hover {
   text-decoration: underline;
->>>>>>> 23fe25b49b33bb242d1007360f6098520a13c347
 }
 
 .location,
@@ -432,7 +397,6 @@ li:hover {
   padding-right: 30px;
 }
 
-<<<<<<< HEAD
 .partie_un_list,
 .partie_deux_list {
   width: fit-content;
@@ -440,8 +404,6 @@ li:hover {
   margin-bottom: 25px;
 }
 
-=======
->>>>>>> 23fe25b49b33bb242d1007360f6098520a13c347
 .iconEmail {
   margin-top: 15px;
 }
@@ -472,11 +434,8 @@ li:hover {
 .iconMedias {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
-=======
   margin-top: -11%;
   margin-left: 2%;
->>>>>>> 23fe25b49b33bb242d1007360f6098520a13c347
 }
 
 .fa-facebook-f {
@@ -502,9 +461,6 @@ li:hover {
   border: 2px solid white;
   border-radius: 25px;
 }
-<<<<<<< HEAD
-=======
-
 
 .fa-facebook-f:hover,
 .fa-instagram:hover,
@@ -525,5 +481,3 @@ li:hover {
   padding-bottom: 1%;
   cursor: pointer;
 }
-
->>>>>>> 23fe25b49b33bb242d1007360f6098520a13c347
