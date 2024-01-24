@@ -47,6 +47,7 @@ h2 {
   touch-action: manipulation;
   will-change: transform;
 }
+
 .button1Div {
   margin-left: 23%;
 }
@@ -251,6 +252,9 @@ nav a {
   border-radius: 15px;
 }
 
+.blocksP {
+  margin-top: 100px;
+}
 .titreMain {
   font-family: "Poppins", sans-serif;
 }
@@ -309,6 +313,8 @@ nav a {
   background-color: #fe52c0;
   cursor: pointer;
   transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
   touch-action: manipulation;
 }
 
@@ -349,19 +355,12 @@ footer {
 
 .list_entiere {
   display: flex;
-  width: 35%;
-  justify-content: space-around;
-  margin-top: -11%;
+  flex-direction: row;
 }
 
 .list {
   list-style: none;
   cursor: pointer;
-  line-height: 200%;
-}
-
-li:hover {
-  text-decoration: underline;
 }
 
 .location,
@@ -377,6 +376,13 @@ li:hover {
   height: 20px;
   object-fit: contain;
   padding-right: 30px;
+}
+
+.partie_un_list,
+.partie_deux_list {
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 25px;
 }
 
 .iconEmail {
@@ -409,8 +415,6 @@ li:hover {
 .iconMedias {
   display: flex;
   flex-direction: row;
-  margin-top: -11%;
-  margin-left: 2%;
 }
 
 .fa-facebook-f {
