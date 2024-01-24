@@ -1,8 +1,14 @@
-const hamburgerButton = document.querySelector (".nav-toggler")
-const navigation = document.querySelector ("nav")
-hamburgerButton.addEventListener("click", toggleNav)
 
-function toggleNav(){
-    hamburgerButton.classList.toggle("active")
-    navigation.classList.toggle("active");
+const hamburgerButton = document.querySelector(".nav-toggler");
+const navigation = document.querySelector("nav");
+hamburgerButton.addEventListener("click", toggleNav);
+
+function toggleNav() {
+  hamburgerButton.classList.toggle("active");
+  navigation.classList.toggle("active");
 }
+
+function darkMode() {
+  let body = document.getElementById("main");
+
+  body.classList.toggle("main");
