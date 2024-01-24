@@ -420,7 +420,6 @@ li:hover {
 .iconMedias {
   display: flex;
   flex-direction: row;
-
   margin-top: -11%;
   margin-left: 2%;
 }
