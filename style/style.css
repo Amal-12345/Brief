@@ -361,6 +361,11 @@ footer {
 .list {
   list-style: none;
   cursor: pointer;
+  line-height: 200%;
+}
+
+li:hover {
+  text-decoration: underline;
 }
 
 .location,
@@ -415,6 +420,8 @@ footer {
 .iconMedias {
   display: flex;
   flex-direction: row;
+  margin-top: -11%;
+  margin-left: 2%;
 }
 
 .fa-facebook-f {
