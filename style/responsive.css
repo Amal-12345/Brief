@@ -6,7 +6,6 @@
     background-image: url(../images/bg_hero_mobile.svg);
     background-repeat: no-repeat;
     width: 100%;
-    display: block;
     height: 100vh;
   }
   .mainContent {
@@ -19,11 +18,12 @@
     margin-left: -80px;
     margin-top: -40px;
   }
-  .button1Div {
+   .button1Div {
     margin-left: -5%;
     margin-top: -5%;
+    width: 15%;
   }
-  .button1 {
+  .bouton1 {
     letter-spacing: 0%;
     width: 125%;
     height: 10%;
@@ -69,18 +69,25 @@
   }
 
   main {
-    margin-top: 10%;
+    margin-top: -10%;
   }
 
   .block {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 32px;
+    flex-direction: column-reverse;
   }
 
+  .flowingConversations {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .imgMain {
     width: 80%;
     height: 75%px;
-    margin: 0 10% 0 10%;
+    margin: -42px 2% 0 18%;
   }
   h2,
   .mainP {
@@ -135,7 +142,7 @@
   }
   .bouton2 {
     width: 100%;
-    height: 15%;
+    height: 50px;
     margin-left: 25%;
     margin-top: 11%;
   }
