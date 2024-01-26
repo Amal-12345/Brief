@@ -7,8 +7,7 @@ function toggleNav() {
   navigation.classList.toggle("active");
 }
 
-// function darkMode() {
-//   let body = document.getElementById("main");
-
-//   body.classList.toggle("main");
-// }
+ function darkMode() {
+   let body = document.getElementById("main");
+   body.classList.toggle("main");
+}
