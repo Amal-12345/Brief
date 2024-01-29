@@ -1,54 +1,62 @@
-@media only screen and (min-width: 375px) and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .header {
     background-image: none;
   }
   .mobileHeader {
     background-image: url(../images/bg_hero_mobile.svg);
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 107%;
-    height: 90vh;
+    height: 122vh;
   }
   .mainContent {
     display: flex;
     flex-direction: column;
-    margin: -60px;
-    width: 335px;
+    margin: 0 25%;
+    width: 50%;
   }
   .logo {
-    width: 140px;
-    margin-left: -80px;
-    margin-top: -61px;
+    height: fit-content;
+    margin-left: -5%;
+    margin-top: -1%;
+    padding: 0;
+    width: 31%;
   }
   .button1Div {
-    width: 19%;
-    margin-left: -4%;
-    margin-top: -5%;
+    margin-top: 0%;
+    margin-left: 8%;
   }
   .bouton1 {
-    letter-spacing: 0%;
+    letter-spacing: 1px;
     border-radius: 30px;
     width: 174%;
     height: 30px;
   }
   .big-title {
-    margin-left: 22%;
-    margin-top: 55%;
+    margin-top: 60%;
     width: 112%;
     font-size: 190%;
+    margin-left: 0;
   }
+
   .text1 {
-    margin-left: 22%;
     width: 113%;
     font-size: 112%;
-    margin-top: 0%;
+    text-align: center;
+    margin-left: 0;
   }
   .bouton2 {
-    width: 80%;
-    margin-left: 25%;
+    width: 90%;
+    margin-left: 0%;
     margin-top: 11%;
   }
+
+  .button2Div {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
   .nav-toggler {
-    top: 0%;
+    top: 5%;
     right: 5%;
     height: 5%;
     width: 10%;
@@ -57,15 +65,17 @@
     min-height: 77vh;
   }
   .img1 {
-    margin: 17% 12% 0% 68%;
-    width: 118%;
+    margin: 15% 0% 0% 0%;
+    width: 145%;
   }
   .community {
+    align-items: center;
+    flex-direction: column;
     margin-top: -20%;
+    display: flex;
   }
   /* main */
   main {
-    width: 122%;
     margin-top: 0%;
   }
 
@@ -77,6 +87,14 @@
     margin-top: 8%;
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  .blocksP {
+    margin-top: 100px;
+  }
+
+  .mainP {
+    width: 100%;
   }
 
   .yourUsers,
@@ -104,9 +122,6 @@
     margin: 115px 2% 0 2%;
   }
   /* footer */
-  footer {
-    width: 122%;
-  }
 
   .logo2 {
     width: 220px;
@@ -121,7 +136,7 @@
   }
 
   .moyensContact {
-    margin-top: -14%;
+    margin-top: -22%;
     margin-left: 2%;
     width: 80%;
   }
@@ -136,7 +151,7 @@
   }
 
   .partie_deux_list {
-    margin-top: -18%;
+    margin-top: -10%;
   }
 
   .iconMedias {
@@ -151,5 +166,15 @@
     display: flex;
     justify-content: center;
     margin-left: 25%;
+  }
+
+  .Email{
+        text-decoration: none;
+    color: #d5eaf3;
+    margin-top: 4%;
+  }
+
+  .Location{
+        margin-top: 0%;
   }
 }
