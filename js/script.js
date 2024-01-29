@@ -36,3 +36,4 @@ function topFunction() {
    rtbyc.classList.toggle("RTBYC");
    color.classList.toggle("mainP");
 }
+

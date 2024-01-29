@@ -10,7 +10,9 @@ body {
 .myBtn {
   display: none;
   position: fixed;
+
   bottom: 50px;
+
   right: 30px;
   z-index: 99;
   border: none;
@@ -35,10 +37,10 @@ h2 {
   background-color: hsl(193, 100%, 96%);
   background-image: url(../images/bg_hero_desktop.svg);
   background-repeat: no-repeat;
-  padding: 40px 0 0 60px;
+  padding: 3% 0 0 4%;
   display: flex;
   flex-direction: column;
-  height: 682px;
+  height: 95vh;
 }
 
 .top {
@@ -47,15 +49,16 @@ h2 {
 }
 
 .logo {
-  padding: 0px 39px;
-  width: 192px;
+  padding: 0% 26%;
+  width: 70%;
 }
 
 .bouton1 {
   border-radius: 50px;
   width: 160%;
   border: none;
-  height: 45px;
+
+  height: 6vh;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -90,7 +93,10 @@ h2 {
 
 .nav-toggler {
   position: fixed;
-  top: 36px;
+
+  z-index: 10;
+  top: 21px;
+
   right: 105px;
   height: 50px;
   width: 50px;
@@ -99,6 +105,7 @@ h2 {
   cursor: pointer;
   background: transparent;
 }
+
 .line {
   position: absolute;
   display: block;
@@ -129,6 +136,7 @@ nav {
   width: 50vw;
   min-height: 100vh;
   right: 0;
+  top: 9%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,7 +170,7 @@ nav a {
 
 .img1 {
   margin: 5% 12% -2% 6%;
-  width: 47%;
+  width: 115%;
 }
 .big-title {
   font-family: "Poppins", sans-serif;
@@ -179,9 +187,9 @@ nav a {
 
 .bouton2 {
   border-radius: 50px;
-  width: 283px;
+  width: 60%;
   border: none;
-  height: 55px;
+  height: 7vh;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -198,6 +206,7 @@ nav a {
   margin-top: 8%;
   margin-left: 12%;
 }
+
 
 /* main */
 main {
@@ -316,15 +325,19 @@ main {
 .block {
   display: flex;
   width: 80%;
+
   padding-top: 50px;
+
   margin-left: 10%;
   margin-right: 10%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 15px;
 }
 
+
 .flowingConversations, .yourUsers{
   margin-top: 5%;
+
 }
 
 .titreMain {
@@ -343,7 +356,10 @@ main {
 }
 
 .imgMain {
-  width: 32%;
+
+  width: 56%;
+  height: 32%;
+
   object-fit: contain;
   margin: 0 3% 35px 11%;
 }
@@ -361,10 +377,10 @@ position:sticky;
 
 .startForFree {
   border-radius: 50px;
-  width: 40%;
+  width: 45%;
   border: none;
-  margin: 30px 10%;
-  height: 50px;
+  margin: 5% 10%;
+  height: 7vh;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -375,14 +391,11 @@ position:sticky;
   touch-action: manipulation;
 }
 
-.startForFree:hover {
-  box-shadow: #fe52c0 0 1px 30px;
-  transition-duration: 0.1s;
-}
-
+.startForFree:hover,
 .bouton2:hover {
   box-shadow: #fe52c0 0 1px 30px;
   transition-duration: 0.1s;
+  opacity: 0.6;
 }
 
 /* footer */
@@ -394,7 +407,7 @@ footer {
 }
 
 .logo2 {
-  width: 220px;
+  width: 20%;
   height: 320px;
   object-fit: contain;
   margin: 0 2% 0 11%;
@@ -420,11 +433,11 @@ footer {
   width: 18px;
   height: 20px;
   object-fit: contain;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
 .iconEmail {
-  margin-top: 15px;
+  margin-top: 21px;
 }
 
 .iconTelephone {

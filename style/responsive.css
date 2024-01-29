@@ -1,37 +1,60 @@
-@media only screen and (max-width: 600px) {
-  .header {
-    background-image: none;
-  }
+
+@media(max-width: 767px) {
+ 
+ html,body{
+width:100%;
+overflow-x:hidden;
+}
   .mobileHeader {
     background-image: url(../images/bg_hero_mobile.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 122vh;
+
+    width: 100%;
+    height: 160vh;
   }
+  .btnImg {
+  width: 50%;
+
+  }
+  .line {
+    width: 80%;
+  }
+
   .mainContent {
     display: flex;
     flex-direction: column;
-    margin: 0 25%;
-    width: 50%;
+       margin: -17% 6% 0% -9%;
+    width: 75%;
+  }
+  .top {
+    position: relative;
+  }
+  .logoImg {
+margin-left: -17%;
+    margin-top: -7%;
+    margin-right: -22%;
   }
   .logo {
-    height: fit-content;
-    margin-left: -5%;
-    margin-top: -1%;
-    padding: 0;
-    width: 31%;
+    width: 60%;
+    margin-top: 10%;
   }
   .button1Div {
-    margin-top: 0%;
-    margin-left: 8%;
+    width: 19%;
+   position: absolute;
+    top: 13%;
+    left: 34%;
+    margin: auto;
   }
   .bouton1 {
-    letter-spacing: 1px;
-    border-radius: 30px;
-    width: 174%;
-    height: 30px;
+    letter-spacing: 0px;
+    width: 100%;
+    height: 4vh;
+    margin: 13% 30%;
   }
   .big-title {
+    margin-left: 12%;
+
     margin-top: 60%;
     width: 112%;
     font-size: 190%;
@@ -39,15 +62,17 @@
   }
 
   .text1 {
+
+    margin-left: 12%;
     width: 113%;
     font-size: 112%;
+    margin-top: 0%;
     text-align: center;
-    margin-left: 0;
   }
   .bouton2 {
-    width: 90%;
-    margin-left: 0%;
-    margin-top: 11%;
+    width: 80%;
+    margin-left: 25%;
+    margin-top: 3%;
   }
 
   .button2Div {
@@ -62,17 +87,17 @@
     width: 10%;
   }
   nav {
-    min-height: 77vh;
+    min-height: 90vh;
   }
   .img1 {
-    margin: 15% 0% 0% 0%;
-    width: 145%;
+
+    margin: 17% 12% 0% 58%;
+    width: 118%;
   }
   .community {
-    align-items: center;
-    flex-direction: column;
-    margin-top: -20%;
-    display: flex;
+    margin-top: 0%;
+    padding-left: 11%;
+
   }
   /* main */
   main {
@@ -82,8 +107,8 @@
   .block {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    padding-top: 85px;
+    width: 72%;
+    padding-top: 10%;
     margin-top: 8%;
     margin-left: 5%;
     margin-right: 5%;
@@ -102,10 +127,14 @@
     flex-direction: column-reverse;
   }
 
+  .flowingConversations {
+    display: flex;
+    flex-direction: column;
+  }
   .imgMain {
     width: 80%;
-    height: 75%px;
-    margin: -22px 10% 0 10%;
+    height: 75%;
+    margin: 0 10%;
   }
   h2,
   #mainP {
@@ -116,13 +145,20 @@
   #RTBYC {
     width: 90%;
     margin: 8% 3.5%;
+
   }
   /* footer */
 
+  footer {
+    width: 100%;
+  }
+
+
   .logo2 {
-    width: 220px;
-    height: 320px;
-    margin: 0px 2% 0 2%;
+   width: 30%;
+    height: 58vh;
+    margin: -11% 0 40px 4%;
+
   }
 
   .informationsComplementaires {
@@ -132,18 +168,23 @@
   }
 
   .moyensContact {
-    margin-top: -22%;
+
+    margin-top: -25%;
+
     margin-left: 2%;
     width: 80%;
+    margin-bottom: 10%;
   }
-
+.map {
+  margin-left: 10%;
+}
   .list_entiere {
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 5px;
-    margin-left: -3%;
+    margin-top: -4%;
+    margin-left: -1%;
   }
 
   .partie_deux_list {
@@ -154,14 +195,17 @@
     justify-content: center;
     display: flex;
     flex-direction: row;
-    margin-left: 2%;
     margin-top: 2%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: 0%;
   }
 
   .copyright {
     display: flex;
     justify-content: center;
-    margin-left: 25%;
+    margin-left: 30%;
+    padding-bottom: 8%;
   }
 
   .Email{
