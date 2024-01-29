@@ -8,6 +8,7 @@ function toggleNav() {
 }
 
 
+
 // Get the button:
 let mybutton = document.getElementById("myBtn");
 
@@ -27,10 +28,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
 
+ function darkMode() {
+   let body = document.getElementById("main");
+   body.classList.toggle("main");
+}
 
-
-// function darkMode() {
-//   let body = document.getElementById("main");
-
-//   body.classList.toggle("main");
-// }
