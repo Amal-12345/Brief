@@ -30,6 +30,10 @@ function topFunction() {
 
  function darkMode() {
    let body = document.getElementById("main");
+   let rtbyc = document.getElementById("RTBYC");
+   let color =document.getElementById("mainP");
    body.classList.toggle("main");
+   rtbyc.classList.toggle("RTBYC");
+   color.classList.toggle("mainP");
 }
 
