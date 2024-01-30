@@ -38,3 +38,4 @@ function darkMode() {
   rtbyc.classList.toggle("RTBYC");
   color.classList.toggle("mainP");
 }
+
