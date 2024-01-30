@@ -42,23 +42,21 @@ h2 {
   flex-direction: column;
   height: 95vh;
 }
-
 .top {
   display: flex;
   align-items: center;
 }
-
 .logo {
   padding: 0% 26%;
   width: 70%;
 }
-
 .bouton1 {
   border-radius: 50px;
   width: 160%;
   border: none;
 
-  height: 6vh;
+  height: 45px;
+
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -70,32 +68,27 @@ h2 {
   touch-action: manipulation;
   will-change: transform;
 }
-
 .button1Div {
   margin-left: 23%;
 }
-
+in
 .bouton1:disabled {
   pointer-events: none;
 }
-
 .bouton1:hover {
   color: #fff;
   background-color: grey;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
-
 .bouton1:active {
   box-shadow: none;
   transform: translateY(0);
 }
-
 .nav-toggler {
   position: fixed;
 
-  z-index: 10;
-  top: 21px;
+  top: 36px;
 
   right: 105px;
   height: 50px;
@@ -111,6 +104,7 @@ h2 {
   display: block;
   width: 100%;
   height: 4px;
+
   background: #00252e;
   transition: transform 0.3s ease-out, opacity 0.1s ease-out;
   border-radius: 5px;
@@ -130,7 +124,6 @@ h2 {
 .nav-toggler.active .l3 {
   transform: translateY(0px) rotate(-135deg);
 }
-
 nav {
   position: fixed;
   width: 50vw;
@@ -141,6 +134,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   background: #00252e;
   border-left: 1px solid #cfcfcf;
   transform: translateX(100%);
@@ -158,16 +152,13 @@ nav a {
   margin: 13px 0;
   text-decoration: none;
 }
-
 .mainContent {
   display: flex;
   align-items: center;
 }
-
 .community {
   margin-top: -5%;
 }
-
 .img1 {
   margin: 5% 12% -2% 6%;
   width: 115%;
@@ -179,12 +170,10 @@ nav a {
   margin-left: 12%;
   margin-top: 36%;
 }
-
 .text1 {
   font-family: "Open Sans", sans-serif;
   margin-left: 12%;
 }
-
 .bouton2 {
   border-radius: 50px;
   width: 60%;
@@ -207,7 +196,6 @@ nav a {
   margin-left: 12%;
 }
 
-
 /* main */
 main {
   background-color: white;
@@ -216,22 +204,21 @@ main {
 
 /* Dark mode debut */
 
-
-.main{
+.main {
   color: white;
   background-color: rgb(22, 22, 22);
 }
 
 
-.RTBYC{
+.RTBYC {
   color: black;
 }
 
-.mainP{
+.mainP {
   color: white;
 }
 
-#darkMode{
+#darkMode {
   display: flex;
   flex-direction: row;
   margin-left: 38%;
@@ -245,7 +232,7 @@ main {
   --light-switch-shadow: #fce477;
   --light-switch-icon: "🌑";
 
-  /* Default */
+
   --switch-icon: var(--dark-switch-icon);
   --switch-shadow-color: var(--dark-switch-shadow);
 }
@@ -335,7 +322,8 @@ main {
 }
 
 
-.flowingConversations, .yourUsers{
+.flowingConversations,
+.yourUsers {
   margin-top: 5%;
 
 }
@@ -354,18 +342,18 @@ main {
   width: fit-content;
   margin: 5% 13%;
 }
-
 .imgMain {
 
-  width: 56%;
-  height: 32%;
+  width: 32%;
 
   object-fit: contain;
   margin: 0 3% 35px 11%;
 }
 
 #RTBYC {
-position:sticky;
+
+  position: sticky;
+
   width: 45%;
   margin: 3% 25.5% -6% 25.5%;
   padding: 2%;
@@ -374,7 +362,6 @@ position:sticky;
   border-radius: 20px;
   text-align: center;
 }
-
 .startForFree {
   border-radius: 50px;
   width: 45%;
@@ -391,13 +378,16 @@ position:sticky;
   touch-action: manipulation;
 }
 
-.startForFree:hover,
+.startForFree:hover {
+  box-shadow: #fe52c0 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
 .bouton2:hover {
   box-shadow: #fe52c0 0 1px 30px;
   transition-duration: 0.1s;
   opacity: 0.6;
 }
-
 /* footer */
 footer {
   background-color: hsl(192, 100%, 9%);
@@ -415,7 +405,6 @@ footer {
 .informationsComplementaires {
   display: flex;
 }
-
 .moyensContact {
   margin-top: -8%;
   margin-left: 11%;
@@ -428,22 +417,19 @@ footer {
   display: flex;
   margin-left: 3%;
 }
-
 .icon {
   width: 18px;
   height: 20px;
   object-fit: contain;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .iconEmail {
   margin-top: 21px;
 }
-
 .iconTelephone {
   margin-top: 5px;
 }
-
 .Picon {
   text-decoration: none;
   color: #d5eaf3;
@@ -457,14 +443,13 @@ footer {
 .Email:hover {
   text-decoration: underline;
 }
-
 .Telephone:hover {
   text-decoration: underline;
 }
-.Location{
+
+.Location {
   margin-top: -0%;
 }
-
 .location {
   margin-top: 20px;
 }
@@ -491,7 +476,6 @@ li:hover {
   margin-top: -11%;
   margin-left: 2%;
 }
-
 .fa-facebook-f {
   padding-left: 8px;
   padding-right: 8px;
@@ -501,28 +485,24 @@ li:hover {
   border: 2px solid white;
   border-radius: 25px;
 }
-
 .fa-twitter {
   padding: 5px;
   border: 2px solid white;
   color: white;
   border-radius: 25px;
 }
-
 .fa-instagram {
   padding: 5px;
   color: white;
   border: 2px solid white;
   border-radius: 25px;
 }
-
 .fa-facebook-f:hover,
 .fa-instagram:hover,
 .fa-twitter:hover {
   color: #fe52c0;
   border: 2px solid #fe52c0;
 }
-
 .mediasClass {
   margin-left: 10px;
 }
